@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc If else if</title>
+</head>
+<body>
+            <input type="text" id="Account1"><br>
+            <input type="password" id="password2"><br>
+            <button onclick="myAccount()">Login</button>
+    <script>
+        function myAccount() {
+            let isAccount = document.getElementById('Account1').value;
+            let isPassword = document.getElementById('password2').value;
+            if (isAccount === "Admin") {
+                if (isPassword === 'TheMaster') {
+                alert('Welcome');
+                } else if (isPassword ==='') {
+                    alert('Canceled');
+                } else
+                    alert('Wrong password');
+            } else if (isAccount === '') {
+                alert('Canceled');
+            } else {
+                alert('I do not know you');
+            }
+        }
+    </script>
+</body>
+</html>
